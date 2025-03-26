@@ -1,0 +1,533 @@
+// 政府端页面样式
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-subtitle {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-divider {
+  height: 4px;
+  width: 60px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.gov-hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #d1e9fc, #c3e5fc);
+  border-radius: var(--border-radius-large);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  
+  .gov-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .hero-shape {
+    position: absolute;
+    border-radius: 50%;
+    
+    &-1 {
+      width: 300px;
+      height: 300px;
+      background: rgba(25, 118, 210, 0.05);
+      top: -150px;
+      right: -100px;
+      animation: float 8s ease-in-out infinite;
+    }
+    
+    &-2 {
+      width: 200px;
+      height: 200px;
+      background: rgba(25, 118, 210, 0.05);
+      bottom: -100px;
+      left: -50px;
+      animation: float 10s ease-in-out infinite reverse;
+    }
+  }
+  
+  h1 {
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .gov-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    
+    .stat-item {
+      text-align: center;
+      
+      .stat-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        margin-bottom: 0.5rem;
+      }
+      
+      .stat-label {
+        color: var(--text-secondary);
+      }
+    }
+  }
+  
+  .hero-actions {
+    margin-top: 2rem;
+    
+    .btn {
+      padding: 0.75rem 2rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.policy-card {
+  border: none;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .policy-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(25, 118, 210, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+    
+    i {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+  }
+  
+  &:hover .policy-icon {
+    transform: scale(1.1);
+    background: rgba(25, 118, 210, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .policy-features {
+    margin-top: 1.5rem;
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      
+      .feature-icon {
+        color: var(--primary-color);
+        margin-right: 0.75rem;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+      }
+      
+      .feature-text {
+        color: var(--text-primary);
+      }
+    }
+  }
+}
+
+.dashboard-card {
+  border: none;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--neutral-light);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    
+    .title {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin: 0;
+    }
+    
+    .controls {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  
+  .dashboard-container {
+    height: 400px;
+    position: relative;
+  }
+  
+  .dashboard-filters {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .filter-item {
+      padding: 0.5rem 1rem;
+      background: var(--neutral-light);
+      border-radius: var(--border-radius-small);
+      cursor: pointer;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: all 0.3s ease;
+      
+      &.active {
+        color: white;
+        background: var(--primary-color);
+      }
+      
+      &:hover:not(.active) {
+        background: var(--neutral-medium);
+      }
+    }
+  }
+}
+
+.report-card {
+  border: none;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .report-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(25, 118, 210, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .report-title {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .report-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      
+      i {
+        color: var(--primary-color);
+      }
+    }
+  }
+  
+  .report-action {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.initiative-section {
+  margin-bottom: 3rem;
+  
+  .initiative-cards {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0 2rem;
+    
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: var(--neutral-light);
+      border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: var(--neutral-medium);
+      border-radius: 10px;
+    }
+  }
+  
+  .initiative-card {
+    flex: 0 0 350px;
+    border: none;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+    
+    .initiative-image {
+      height: 200px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+    }
+    
+    &:hover .initiative-image img {
+      transform: scale(1.05);
+    }
+    
+    .card-body {
+      padding: 1.5rem;
+    }
+    
+    .initiative-category {
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    
+    .initiative-title {
+      font-size: 1.25rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    
+    .initiative-progress {
+      margin: 1.5rem 0;
+      
+      .progress-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        
+        .label {
+          color: var(--text-secondary);
+        }
+        
+        .value {
+          color: var(--primary-dark);
+          font-weight: 600;
+        }
+      }
+      
+      .progress {
+        height: 8px;
+        border-radius: 4px;
+        background: var(--neutral-light);
+        overflow: hidden;
+        
+        .progress-bar {
+          height: 100%;
+          background: var(--primary-color);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+.network-section {
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(25, 118, 210, 0.1));
+  border-radius: var(--border-radius-large);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  
+  .network-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .network-title {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+  }
+  
+  .network-description {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .network-actions {
+    .btn {
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+      margin: 0 0.5rem;
+    }
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+    .partner-logo {
+      height: 60px;
+      filter: grayscale(1) opacity(0.5);
+      transition: all 0.3s ease;
+      
+      &:hover {
+        filter: grayscale(0) opacity(1);
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .gov-hero {
+    padding: 3rem 1rem;
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .gov-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .hero-actions {
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  
+  .dashboard-card .dashboard-filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    
+    .filter-item {
+      flex-shrink: 0;
+    }
+  }
+  
+  .network-section {
+    padding: 2rem 1rem;
+    
+    .network-title {
+      font-size: 2rem;
+    }
+    
+    .network-actions {
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+} 

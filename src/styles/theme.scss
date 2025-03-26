@@ -1,0 +1,60 @@
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(45deg, #e3f2fd, #bbdefb, #e3f2fd);
+  background-size: 200% 200%;
+  border-radius: 1rem;
+  animation: gradientBG 10s ease infinite;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(0deg);
+    animation: rotate 20s linear infinite;
+    pointer-events: none;
+  }
+
+  h1 {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  p {
+    animation: fadeInUp 1s ease-out 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

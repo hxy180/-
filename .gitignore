@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# 构建输出
+/dist/
+/build/
+
+# 本地环境文件
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器和IDE文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+logs
+*.log
+
+# 临时文件
+.tmp/
+.temp/
+~$*
+docs/~$*.xlsx
+
+# 截图占位文件
+public/images/screenshots/*.png
+!public/images/screenshots/*.md
+!public/images/screenshots/*.txt 

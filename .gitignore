@@ -7,7 +7,6 @@ package-lock.json
 yarn.lock
 
 # 构建输出
-/dist/
 /build/
 
 # 本地环境文件

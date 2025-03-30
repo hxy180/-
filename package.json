@@ -1,0 +1,29 @@
+{
+  "name": "carbon-travel",
+  "version": "1.0.0",
+  "description": "碳旅通 - 连接航空公司、革命老区与旅客的碳普惠平台",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "carbon-travel": "file:",
+    "chart.js": "^4.4.1",
+    "particles.js": "^2.0.0",
+    "pinia": "^2.1.7",
+    "three": "^0.174.0",
+    "vanta": "^0.5.24",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "sass": "^1.69.5",
+    "vite": "^5.0.0"
+  }
+}

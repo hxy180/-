@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/CarbonWings/',  // 将 'your-repo-name' 替换为你的 GitHub 仓库名称
+  base: '/',  //打包路径，与路由history保持一致，确保与GitHub Pages部署路径一致
   server: {
     port: 3000,
     host: true

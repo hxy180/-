@@ -9,7 +9,7 @@ yarn.lock
 
 # 构建输出
 /build/
-# /dist/  # 确保这行被注释掉或删除
+# /dist/
 
 # 本地环境文件
 .env.local

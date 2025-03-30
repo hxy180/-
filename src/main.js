@@ -10,7 +10,7 @@ Chart.register(...registerables)
 
 // 路由配置
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/CarbonWings/'),
   routes: [
     {
       path: '/',

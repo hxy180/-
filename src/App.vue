@@ -38,7 +38,7 @@
 
     <footer class="footer mt-auto py-3">
       <div class="container text-center">
-        <span class="text-muted">© 2023 碳旅通 - 连接航空公司、革命老区与旅客的碳普惠平台</span>
+        <span class="text-muted">© 2025 碳旅通 - 连接航空公司、革命老区与旅客的碳普惠平台</span>
       </div>
     </footer>
   </div>
